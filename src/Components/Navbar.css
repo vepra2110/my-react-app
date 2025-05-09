@@ -1,0 +1,48 @@
+:root {
+    --color: #61DAFB;
+}
+
+.navbar-style {
+    width: 100%;
+    background-color: rgb(40, 65, 91);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    font-size: 3.75rem;
+    color: var(--color);
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+.navbar-title {
+    color: var(--color);
+    text-decoration: none;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 35px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color);
+}
+
+.user-logo {
+    color: antiquewhite;
+    font-size: 30px;
+}
