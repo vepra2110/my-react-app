@@ -46,23 +46,12 @@ const Navbar = () => {
           Team
         </Link>
       </div>
-      
-      {/* {localStorage.getItem('username')  && JSON.parse(localStorage.getItem('isLoggedIn'))  ? 
-
-        <Link
-        to='/profile'
-        >
-          <FaRegUser className='user-logo'/>
-        </Link>
-      :
-        <Link
-        to='/login'
-        >
-          <FaRegUser className='user-logo'/>
-        </Link>
-      } */}
-
-      <button onClick={handleProfileClick}><FaRegUser className='user-logo'/></button>
+      <button
+      onClick={handleProfileClick}
+      className='user-logo-button'
+      >
+        <FaRegUser className='user-logo'/>
+      </button>
     </nav>
   )
 }

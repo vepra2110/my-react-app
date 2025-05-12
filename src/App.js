@@ -1,21 +1,13 @@
 import { Route, Routes } from 'react-router';
 import './App.css';
-import Navbar from './Components/Navbar';
+import Navbar from './Components/NavbarComponents/Navbar';
 import Home from './Components/Home';
 import Schedule from './Components/Schedule';
-import Login from './Components/Login/Login';
+import Login from './Components/LoginComponents/Login';
 import Profile from './Components/Profile';
-import Team from './Components/Team';
-import { useEffect, useState } from 'react';
+import Team from './Components/TeamComponents/Team';
 
 function App() {
-  // const [username, setUsername] = useState('');
-  
-
-  // localStorage.setItem('isLoggedIn', false);
-  // localStorage.setItem('username', '');
-
-
   return (
     <div className="App">
       <Navbar />

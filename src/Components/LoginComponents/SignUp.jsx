@@ -23,37 +23,41 @@ const SingUp = () => {
   return (
     <div className='signup-container'>
       <div className='title'>Sign Up</div>
-      <div>
+      <div className="input-row">
         <span>Name: </span>  
         <input
         type="text"
         name="name"
         onChange={e => setName(e.target.value)}
-        placeholder="Name" />
+        placeholder="Name"
+        className="input" />
       </div>
-      <div>
+      <div className="input-row">
         <span>Username: </span>  
         <input
         type="text"
         name="username"
         onChange={e => setUsername(e.target.value)}
-        placeholder="Username" />
+        placeholder="Username"
+        className="input" />
       </div>
-      <div>
+      <div className="input-row">
         <span>Password: </span>  
         <input
         type="password"
         name="password"
         onChange={e => setPassword(e.target.value)}
-        placeholder="Password" />
+        placeholder="Password"
+        className="input" />
       </div>
-      <div>
+      <div className="input-row">
         <span>College: </span>  
         <input
         type="text"
         name="college"
         onChange={e => setCollege(e.target.value)}
-        placeholder="College" />
+        placeholder="College"
+        className="input" />
       </div>
       
       <Link
@@ -62,6 +66,7 @@ const SingUp = () => {
         <button
         type="submit"
         onClick={handleSignUp}
+        className="signup-btn"
         >Sign Up</button>
       </Link>
     </div>

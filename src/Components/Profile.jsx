@@ -1,6 +1,7 @@
 import React from 'react'
 import { FiUser } from "react-icons/fi";
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import './ProfileStyle.css'
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -11,15 +12,19 @@ const Profile = () => {
   }
 
   return (
-    <div className='profile-container'>
-      <h1>Profile Page</h1>
+
+    <div className='profile-container background'>
+      <label className='page-title'>Profile Page</label>
+
       <div className="user-card">
-        <div><FiUser /> <h1>{localStorage.getItem('username')} </h1></div>
-        <div>Name: { localStorage.getItem('name') } </div>
-        <div>College: { localStorage.getItem('college') } </div>
+        <div className='user-name-display'>
+          <FiUser className='profile-user-logo' />
+          <h1 className='username'>{localStorage.getItem('username')} </h1>
+        </div>
+        <div className='name-display'>Name: { localStorage.getItem('name') } </div>
+        <div className='college'>College: { localStorage.getItem('college') } </div>
+        <button onClick={handleLogOut} className='logout-button'>Log Out</button>
       </div>
-      <button onClick={handleLogOut}>Log Out</button>
-      
     </div>
   )
 }
