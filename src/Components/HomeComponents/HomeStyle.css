@@ -1,0 +1,21 @@
+.home-container {
+    color: rgb(212, 212, 212);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome {
+    font-size: 30px;
+}
+
+.spacefest-home {
+    font-size: 150px;
+    color: white;
+}
+
+.date-venue {
+    font-size: 45px;
+}

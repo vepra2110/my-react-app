@@ -48,8 +48,8 @@
 }
 
 .user-logo {
-    color: antiquewhite;
     font-size: 30px;
+    color: var(--color);
 }
 
 .user-logo-button {

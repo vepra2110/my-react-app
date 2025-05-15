@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { BiLogoReact } from 'react-icons/bi'
+import { IoMdPlanet } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import { FaRegUser } from "react-icons/fa";
 import './Navbar.css'
@@ -21,8 +22,8 @@ const Navbar = () => {
 
       <Link to='/'>
         <span className='title-container'>
-          <BiLogoReact className='logo'/>
-          <span className='navbar-title'>React Router</span>
+          <IoMdPlanet className='logo'/>
+          <span className='navbar-title'>SPACE FEST</span>
         </span>
       </Link>
 
@@ -34,7 +35,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-        to='/schedule'
+        to='/schedule/0'
         className='link'
         >
           Schedule
