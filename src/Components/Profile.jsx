@@ -13,8 +13,8 @@ const Profile = () => {
 
   return (
 
-    <div className='profile-container background'>
-      <label className='page-title'>Profile Page</label>
+    <div className='profile-container profile-background'>
+      <label className='page-title'><b>User Profile</b></label>
 
       <div className="user-card">
         <div className='user-name-display'>

@@ -1,4 +1,17 @@
+.home-background {
+    height: 100vh;
+
+    background-image: url('BlackHole.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
 .home-container {
+    height: 100%;
     color: rgb(212, 212, 212);
 
     display: flex;

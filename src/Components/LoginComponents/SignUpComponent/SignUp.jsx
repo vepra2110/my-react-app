@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './SignUpStyle.css'
-import { Link } from 'react-router'
+import { useNavigate } from 'react-router-dom'
 
 const SingUp = () => {
 
@@ -9,19 +9,27 @@ const SingUp = () => {
   const [name, setName] = useState('');
   const [college, setCollege] = useState('');
 
-  const handleSignUp = () => {
-    localStorage.setItem('name', name);
-    localStorage.setItem('username', username);
-    localStorage.setItem('password', password);
-    localStorage.setItem('college', college);
+  const navigate = useNavigate();
 
-    localStorage.getItem('isLoggedIn') ? 
-    localStorage.setItem('isLoggedIn', !JSON.parse(localStorage.getItem('isLoggedIn'))) :
-    localStorage.setItem('isLoggedIn', true);
+  const handleSignUp = () => {
+    if (name != '' && username != '' && password != '' && college != '') {
+      localStorage.setItem('name', name);
+      localStorage.setItem('username', username);
+      localStorage.setItem('password', password);
+      localStorage.setItem('college', college);
+  
+      localStorage.getItem('isLoggedIn') ? 
+      localStorage.setItem('isLoggedIn', !JSON.parse(localStorage.getItem('isLoggedIn'))) :
+      localStorage.setItem('isLoggedIn', true);
+
+      navigate('/profile');
+    } else {
+      alert('Please fill in all the fields')
+    }
   }
 
   return (
-    <div className='background'>
+    <div className='signup-background signup-container'>
       <form className="signup-form">
 
         <div style={{fontSize: '50px', marginBottom:'15px'}}>Sign Up</div>
@@ -66,15 +74,11 @@ const SingUp = () => {
           className="input" />
         </div>
         
-        <Link
-        to='/profile'
-        >
-          <button
-          type="submit"
-          onClick={handleSignUp}
-          className="sign-up-button"
-          >Sign Up</button>
-        </Link>
+        <button
+        type="submit"
+        onClick={handleSignUp}
+        className="sign-up-button"
+        >Sign Up</button>
 
       </form>
     </div>

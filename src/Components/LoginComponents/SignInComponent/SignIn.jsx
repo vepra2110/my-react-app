@@ -28,7 +28,7 @@ const SignIn = () => {
     }
 
   return (
-    <div className='background'>
+    <div className='signin-background signin-container'>
       <form className='signin-form'>
 
         <span style={{fontSize: '50px', marginBottom:'15px'}}>Sign In</span>

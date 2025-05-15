@@ -17,7 +17,7 @@ const Team = () => {
 ]
 
   return (
-    <div class="background">
+    <div class="team-background">
       <label className="title"><b>Our Team</b></label>
       <div className="members">
         {

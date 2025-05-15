@@ -3,7 +3,7 @@ import './HomeStyle.css'
 
 const Home = () => {
   return (
-    <div className="background">
+    <div className="home-background">
       <div className="home-container">
 
         <div className="heading">
@@ -11,7 +11,7 @@ const Home = () => {
           <div className="spacefest-home">SPACEFEST</div>
         </div>
 
-        <div className="date-venue">Nov 8-10 | IIT Kharagpur</div>
+        <div className="date-venue">Nov 8-10 '25 | IIT Kharagpur</div>
 
       </div>
     </div>

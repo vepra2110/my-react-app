@@ -1,10 +1,11 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import './ScheduleStyle.css'
 import ScheduleCard from './ScheduleCard';
 
 const Schedule = () => {
   const { dayId } = useParams();
+  const navigate = useNavigate();
   const events = [
   { 
     day: 0,
@@ -94,9 +95,23 @@ const Schedule = () => {
 
 const eventsFiltered = events.filter(event => event.day === parseInt(dayId));
 
+const handleNavigateSchedule = (id) => {
+  navigate(`/schedule/${id}`)
+}
+
   return (
-    <div className='background'>
-      <label className="schedule-page-title">Schedule Page: Day {dayId}</label>
+    <div className='schedule-background'>
+      <div className="navigate-schedule">
+        <button onClick={() => handleNavigateSchedule(0)} 
+          className={dayId === '0' ? 'navigate-schedule-button-active' : 'navigate-schedule-button'}>Day 0</button>
+        <button onClick={() => handleNavigateSchedule(1)} 
+          className={dayId === '1' ? 'navigate-schedule-button-active' : 'navigate-schedule-button'}>Day 1</button>
+        <button onClick={() => handleNavigateSchedule(2)} 
+          className={dayId === '2' ? 'navigate-schedule-button-active' : 'navigate-schedule-button'}>Day 2</button>
+      </div>
+
+      <label className="schedule-page-title"><b>Day {dayId}</b></label>
+
       <div className="schedule-cards-container">
         {
           eventsFiltered.map(Event => (
