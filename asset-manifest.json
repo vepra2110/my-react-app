@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/my-react-app/static/css/main.e17e0b55.css",
+    "main.js": "/my-react-app/static/js/main.d63c6745.js",
+    "static/media/BlackHole.jpg": "/my-react-app/static/media/BlackHole.c0618780c8a6d665febc.jpg",
+    "index.html": "/my-react-app/index.html",
+    "main.e17e0b55.css.map": "/my-react-app/static/css/main.e17e0b55.css.map",
+    "main.d63c6745.js.map": "/my-react-app/static/js/main.d63c6745.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e17e0b55.css",
+    "static/js/main.d63c6745.js"
+  ]
+}
