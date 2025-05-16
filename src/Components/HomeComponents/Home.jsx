@@ -4,7 +4,7 @@ import './HomeStyle.css'
 const Home = () => {
   return (
     <div className="home-background">
-      <div className="home-container">
+      <div className="home-container"> 
 
         <div className="heading">
           <div className="welcome">Welcome to</div>

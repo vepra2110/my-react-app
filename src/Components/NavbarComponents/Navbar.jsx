@@ -1,5 +1,3 @@
-import React, { useEffect } from 'react'
-import { BiLogoReact } from 'react-icons/bi'
 import { IoMdPlanet } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import { FaRegUser } from "react-icons/fa";

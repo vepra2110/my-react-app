@@ -12,7 +12,7 @@ const SingUp = () => {
   const navigate = useNavigate();
 
   const handleSignUp = () => {
-    if (name != '' && username != '' && password != '' && college != '') {
+    if (name !== '' && username !== '' && password !== '' && college !== '') {
       localStorage.setItem('name', name);
       localStorage.setItem('username', username);
       localStorage.setItem('password', password);
